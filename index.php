@@ -1,5 +1,4 @@
 <?php
-include __DIR__ . './Models/Movie.php';
 include __DIR__ . '/db.php';
 ?>
 
@@ -20,18 +19,33 @@ include __DIR__ . '/db.php';
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./js/utility.js"></script>
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>esercizio</title>
 </head>
 
 
 
 <body>    
-    <div>
-        <ul>
-            
-        </ul>
-    </div>   
+<div class="container">
+		<div class="row">
+			<?php foreach ($movies as $movie) { ?>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="card mb-4">
+						<img class="card-img-top" src="<?php echo $movie->image?>" alt="<?php echo $movie->title?>">
+						<div class="card-body">
+							<p class="fs-4"><?php echo "$movie->title" ?></p>
+							<p><?php echo "$movie->original_title" ?></p>
+							<p><?php echo "$movie->date" ?></p>
+							<p><?php echo "$movie->vote" ?></p>
+							<?php foreach ($movie->category as $category) { ?>
+                                <span><?php echo $category ?></span>
+                            <?php } ?>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</div>  
 </body>
 
 </html>

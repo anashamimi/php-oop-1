@@ -9,7 +9,7 @@ class Movie
     public $date;
     public $vote;
     public $image;
-    public $category;
+    public $category = [];
 
     public function __construct($id, $title, $original_title, 
     $nationality, $date, $vote, $image, $category)
