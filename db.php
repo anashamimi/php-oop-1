@@ -13,5 +13,23 @@ $movies= [
     new Movie('4', 'Gravity', 'Gravity', 'en', '2013-08-28', '7.8', 
     'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4pRXqT7wQmoH5sH6Z4WYmbAFG4t.jpg',
     ['fantascienza', 'thriller', 'drammatico']),
+    new Movie('5', 'Toy Story - Il Mondo Dei Giocattoli', 'Toy Story', 'it', '1995-11-19', '7.8', 
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mGnOtBmpkQ5CndwxeIKDUqkUkre.jpg',
+    ['Animation', 'Adventure', 'Comedy']),
+    new Movie('6', 'Pulp Fiction', 'Pulp Fiction', 'de', '1994-10-14', '9.2',
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9p10J9Xp7MuaVac56g8BwAuXEsA.jpg',
+    ['Crime', 'Drama', 'Thriller']),
+    new Movie('7', 'Forrest Gump', 'Forrest Gump', 'fr', '1994-06-23', '8.8',
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pGZqc9jQ6F8klQZKm37NAAMH70o.jpg',
+    ['Drama', 'Romance']),
+    new Movie('8', 'Guerre Stellari', 'Star Wars', 'en', '1977-05-25', '8.6',
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fVqKwpvobwWy0P1UImZWIDuw4RI.jpg',
+    ['Action', 'Adventure', 'Fantasy']),
+    new Movie('9', 'E.T. - L\'extra-terrestre', 'E.T. - The Extra-Terrestrial', 'en', '1982-06-11', '7.9',
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qKMqJCldp5fPsuv6Vb0RbKY9K8U.jpg',
+    ['Adventure', 'Family', 'Fantasy', 'Science Fiction']),
+    new Movie('10', 'Il silenzio degli innocenti', 'The Silence of the Lambs', 'en', '1991-02-01', '8.3',
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8P4fZhbiqfeMk2btOeXLu0AKvBl.jpg',
+    ['Crime', 'Drama', 'Thriller', 'Horror'])
 ];
 

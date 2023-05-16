@@ -23,4 +23,21 @@ class Movie
         $this->image = $image;
         $this->category = $category;        
     }
+
+    public function getFlag()
+    {
+        $flags = [
+            'en' => './img/en.png',  
+            'it' => './img/it.png', 
+            'fr' => './img/fr.png', 
+            'de' => './img/de.png', 
+            
+        ];
+    
+        if (array_key_exists($this->nationality, $flags)) {
+            return $flags[$this->nationality];
+        }
+    
+        return null; // Restituisce null se la nazionalità non ha una bandiera corrispondente
+    }
 }
